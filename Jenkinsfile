@@ -21,7 +21,6 @@ node {
              sh '''
              terraform init
              terraform apply -auto-approve -var access_key=${AWS_KEY} -var secret_key=${AWS_SECRET}
-             sh 'echo "all done"'
              '''
           }
       
