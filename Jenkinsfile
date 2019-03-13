@@ -1,7 +1,7 @@
 node {
       checkout scm
 
-    docker.withServer('tcp://10.0.1.99:4243') {
+    docker.withServer('tcp://10.14.32.22:4243') {
         docker.image('danish09/cms-build-node:latest')
     }
     stage('pre-setup') {
